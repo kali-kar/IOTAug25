@@ -8,8 +8,8 @@ const char* password = "YOUR_PASSWORD";
 WebServer server(80);
 WebSocketsServer webSocket = WebSocketsServer(81);
 
-const int led1Pin = 16;
-const int led2Pin = 17;
+const int led1Pin = 6;
+const int led2Pin = 7;
 
 const char webpage[] PROGMEM = R"rawliteral(
 <!DOCTYPE html>
@@ -24,8 +24,8 @@ const char webpage[] PROGMEM = R"rawliteral(
 </head>
 <body>
   <h1>ESP32 LED Controller</h1>
-  <button onclick="toggleLED(1)">Toggle LED 1</button>
-  <button onclick="toggleLED(2)">Toggle LED 2</button>
+  <button onclick="toggleLED(1)">LED 1</button>
+  <button onclick="toggleLED(2)">LED 2</button>
   <div id="status">Connecting...</div>
 
   <script>
