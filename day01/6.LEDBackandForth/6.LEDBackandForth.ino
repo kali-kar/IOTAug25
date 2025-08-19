@@ -1,7 +1,7 @@
 int leds[] = {A2,A3,A4,A5}; 
 int numLEDs = 4;
 int delayTime = 200; 
-int direction = 1; d
+int direction = 1; 
 int currentLED = 0;
 
 void setup() {
